@@ -15,7 +15,7 @@ const handleYesClick = () => {
 
   // Define predefined romantic date ideas
   const dateIdeas = [
-    "AAAAAA333333 EEEEEEEEEE"
+    "AAAAAA333333 EEEEEEEEEE",
 
     // Add more date ideas as needed
   ];
