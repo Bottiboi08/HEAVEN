@@ -28,7 +28,7 @@ h2 {
 }
 
 .btn-group {
-    width: 100%;
+    width: 120%;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@ h2 {
 
 button {
     position: absolute;
-    width: 150px;
+    width: 180px;
     height: inherit;
     font-size: 1.2em;
     color: white;
