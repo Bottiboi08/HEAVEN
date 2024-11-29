@@ -1,17 +1,17 @@
 const qs = (selector) => document.querySelector(selector);
 const question = qs(".question");
 const gif = qs(".gif");
-const [yesBtn, noBtn] = [".eyy-btn", ".lee-btn"].map(qs);
+const [eyyBtn, leeBtn] = [".eyy-btn", ".lee-btn"].map(qs);
 
-const handleYesClick = () => {
+const handleeyyClick = () => {
   question.innerHTML = "EEEEEEEEEE ! HAYA HAYA !";
   gif.src = "ans.gif";
 
   // Remove the 'mouseover' event listener from noBtn
   noBtn.removeEventListener("mouseover", handleNoMouseOver);
 
-  // Remove the noBtn from the DOM
-  noBtn.remove();
+  // Remove the leeBtn from the DOM
+  leeBtn.remove();
 
   // Define predefined romantic date ideas
   const dateIdeas = [
