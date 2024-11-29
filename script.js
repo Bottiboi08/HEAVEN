@@ -1,7 +1,7 @@
 const qs = (selector) => document.querySelector(selector);
 const question = qs(".question");
 const gif = qs(".gif");
-const [yesBtn, noBtn] = [".eyyy-btn", ".leee-btn"].map(qs);
+const [yesBtn, noBtn] = [".yes-btn", ".no-btn"].map(qs);
 
 const handleYesClick = () => {
   question.innerHTML = "EEEEEEEEEEEEEEEEEEEEE!";
