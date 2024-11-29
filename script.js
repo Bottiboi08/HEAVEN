@@ -7,8 +7,8 @@ const handleeyyClick = () => {
   question.innerHTML = "EEEEEEEEEE ! HAYA HAYA !";
   gif.src = "ans.gif";
 
-  // Remove the 'mouseover' event listener from noBtn
-  noBtn.removeEventListener("mouseover", handleNoMouseOver);
+  // Remove the 'mouseover' event listener from leeBtn
+  noBtn.removeEventListener("mouseover", handleleeMouseOver);
 
   // Remove the leeBtn from the DOM
   leeBtn.remove();
@@ -45,7 +45,7 @@ const handleeyyClick = () => {
   });
 
   // Replace yesBtn with the new letsGoBtn
-  yesBtn.replaceWith(letsGoBtn);
+  eyyBtn.replaceWith(letsGoBtn);
 };
 
 const handleNoMouseOver = () => {
@@ -53,9 +53,9 @@ const handleNoMouseOver = () => {
   const maxX = window.innerWidth - width;
   const maxY = window.innerHeight - height;
 
-  noBtn.style.left = `${Math.floor(Math.random() * maxX)}px`;
-  noBtn.style.top = `${Math.floor(Math.random() * maxY)}px`;
+  leeBtn.style.left = `${Math.floor(Math.random() * maxX)}px`;
+  leeBtn.style.top = `${Math.floor(Math.random() * maxY)}px`;
 };
 
-yesBtn.addEventListener("click", handleYesClick);
-noBtn.addEventListener("mouseover", handleNoMouseOver);
+eyyBtn.addEventListener("click", handleeyyClick);
+leeBtn.addEventListener("mouseover", handleleeMouseOver);
