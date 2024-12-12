@@ -1,6 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #inputField {
+            position: absolute;
+            bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input id="inputField" type="text" placeholder="Type here...">
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+        const inputField = document.getElementById('inputField');
+
+        inputField.addEventListener('keyup', (event) => {
+            if (event.key === 'Enter') {
+                const input = inputField.value.trim();
+
+                if (input === '3HELLO3') {
+                    // Change background to an image
+                    container.style.backgroundImage = "url('path_to_your_image.jpg')"; // Replace with your image path
+
+                    // Execute another task
+                    executeAnotherTask();
+                } else {
+                    // Reset background to default color
+                    container.style.backgroundImage = '';
+                    container.style.backgroundColor = 'lightgray';
+                }
+
+                // Clear the input field
+                inputField.value = '';
+            }
+        });
+
+        function executeAnotherTask() {
+            // Code to execute when the background changes to a photo
+            alert('Background changed to a photo. Another task begins!');
+            console.log('Another task is running.');
+        }
+    </script>
+</body>
+</html>
+#FFFFFFFF
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FOUND HEAVEN</title>
