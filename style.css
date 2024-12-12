@@ -12,9 +12,8 @@ body {
     background: whitesmoke;
     font-family: 'Leckerli One', cursive;
     font-size: large;
-    background-color: rgba(255, 255, 255, .4);
+    background-color: #e4d1ff;
 }
-
 h2 {
     text-align: center;
     font-family: 'Leckerli One', cursive;
