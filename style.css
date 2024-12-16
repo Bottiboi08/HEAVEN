@@ -20,7 +20,7 @@ h2 {
     font-size: 1.5em;
     color: #342a4a;
     margin: 15px 0;
-    -webkit-text-stroke: 1px white; /* Stroke width and color */
+    -webkit-text-stroke: 0.4px white; /* Stroke width and color */
 }
 
 }
