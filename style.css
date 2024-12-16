@@ -12,7 +12,7 @@ body {
     background: whitesmoke;
     font-family: 'Leckerli One', cursive;
     font-size: large;
-    background-color: #e4d1ff;
+    background-image: url("../../media/examples/lizard.png");
 }
 h2 {
     text-align: center;
