@@ -59,18 +59,3 @@ button:nth-child(2) {
     background: white;
     color: #7f4de9 ;
 }
-#submit-btn {
-    background-color: #a020f0; /* Vivid purple background */
-    color: white;             /* White text */
-    border: 2px solid white;  /* White border */
-    padding: 10px 20px;       /* Padding for spacing */
-    font-size: 1em;           /* Button font size */
-    cursor: pointer;          /* Pointer cursor on hover */
-    border-radius: 30px;      /* Rounded corners for consistency */
-    box-shadow: 0 2px 4px gray; /* Subtle shadow */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-#submit-btn:hover {
-    background-color: #8b008b; /* Darker purple on hover */
-}
