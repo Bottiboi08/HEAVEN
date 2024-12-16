@@ -14,7 +14,13 @@
     />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="input-wrapper">
+      <label for="magic-word">Enter the magic word to proceed:</label>
+      <input type="text" id="magic-word" placeholder="Type here..." />
+      <button id="submit-btn">Submit</button>
+    </div>
+
+    <div class="wrapper" style="display: none;">
       <h2 class="question">Will you go out with me?</h2>
       <img
         class="gif"
@@ -26,7 +32,17 @@
         <button class="no-btn">🖕🏻Leeeeeee🖕🏻</button>
       </div>
     </div>
-    <script src="script.js"></script>
-    
+
+    <script>
+      document.getElementById('submit-btn').addEventListener('click', function() {
+        const input = document.getElementById('magic-word').value.trim().toLowerCase();
+        if (input.replace(/[^a-z]/gi, '').toLowerCase() === 'falfoul') {
+          document.querySelector('.wrapper').style.display = 'block';
+          document.querySelector('.input-wrapper').style.display = 'none';
+        } else {
+          alert('Incorrect magic word! Try again.');
+        }
+      });
+    </script>
   </body>
 </html>
